@@ -8,6 +8,7 @@
   <style>
     :root {
       --txt: #1e1e1e;
+      --link: #1e66f5;
 
       --shadow-dark: #e3e3e3;
       --shadow-light: #ffffff;
@@ -15,7 +16,8 @@
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --txt: #fff;
+        --txt: #eee;
+        --link: #89b4fa;
 
         --shadow-dark: #0b0e13;
         --shadow-light: #0f141b;

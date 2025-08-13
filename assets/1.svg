@@ -20,7 +20,7 @@
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --txt: #fff;
+        --txt: #eee;
 
         --shadow-dark: #0b0e13;
         --shadow-light: #0f141b;
