@@ -50,48 +50,11 @@
       font: bold 1rem "Raleway";
       text-transform: uppercase;
     }
-
-    .icons-list {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 0.5rem;
-      font: bold 1rem "Raleway";
-      flex-wrap: wrap;
-      max-width: 26.5rem;
-    }
-
-    .icon {
-      /* (100% / 6) - (0.5rem * 5 / 6) */
-      width: calc(100% / 6 - 0.42rem);
-      max-width: 4rem;
-      aspect-ratio: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 19%;
-      overflow: hidden;
-      box-shadow: inset 5px 5px 9px var(--shadow-dark),
-        inset -5px -5px 9px var(--shadow-light);
-    }
-
-    .icon svg {
-      width: 80%;
-      mix-blend-mode: multiply;
-      opacity: 0.75;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .icon svg {
-        opacity: 0.8;
-        filter: brightness(1.7);
-      }
-    }
   </style>
   <foreignObject width="100%" height="100%">
 
     <body xmlns="http://www.w3.org/1999/xhtml">
       <div class="background" />
-      <div class="border" />
       <div class="content">
         <h2 class="subheading">Projects</h2>
       </div>
