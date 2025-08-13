@@ -16,6 +16,14 @@
 
       --shadow-dark: #e3e3e3;
       --shadow-light: #ffffff;
+
+      --c-orange: #fe640b;
+      --c-yellow: #df8e1d;
+      --c-teal: #209fb5;
+      --c-sky: #04a5e5;
+      --c-blue: #1e66f5;
+      --c-violet: #8839ef;
+      --c-gray: #4c4f69;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -24,6 +32,14 @@
 
         --shadow-dark: #0b0e13;
         --shadow-light: #0f141b;
+
+        --c-orange: #fab387;
+        --c-yellow: #f9e2af;
+        --c-teal: #74c7ec;
+        --c-sky: #89dceb;
+        --c-blue: #89b4fa;
+        --c-violet: #cba6f7;
+        --c-gray: #cdd6f4;
       }
     }
 
@@ -98,8 +114,8 @@
 
     @media (prefers-color-scheme: dark) {
       .icon svg {
-        opacity: 0.8;
-        filter: brightness(1.7);
+        mix-blend-mode: normal;
+        opacity: 0.85;
       }
     }
   </style>
@@ -116,7 +132,7 @@
           <!-- JS -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <g fill="none" stroke="#df8e1d" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="var(--c-yellow)" stroke-linecap="round" stroke-linejoin="round">
                 <path
                   d="M4.5 11c0 .828427.6715729 1.5 1.5 1.5.8284271 0 1.5-.671573 1.5-1.5V7.5M12.5 8.75C12.5 8.05964406 11.9627417 7.5 11.3 7.5L10.7 7.5C10.0372583 7.5 9.5 8.05964406 9.5 8.75 9.5 9.44035594 10.0372583 10 10.7 10L11.3 10C11.9627417 10 12.5 10.5596441 12.5 11.25 12.5 11.9403559 11.9627417 12.5 11.3 12.5L10.7 12.5C10.0372583 12.5 9.5 11.9403559 9.5 11.25" />
                 <path
@@ -128,7 +144,7 @@
           <!-- TS -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <g fill="none" stroke="#1e66f5" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="var(--c-blue)" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 1.5h8A2.5 2.5 0 0114.5 4v8a2.5 2.5 0 01-2.5 2.5H4A2.5 2.5 0 011.5 12V4A2.5 2.5 0 014 1.5" />
                 <path
                   d="M12.5 8.75c0-.69-.54-1.25-1.2-1.25h-.6c-.66 0-1.2.56-1.2 1.25S10.04 10 10.7 10h.6c.66 0 1.2.56 1.2 1.25s-.54 1.25-1.2 1.25h-.6c-.66 0-1.2-.56-1.2-1.25m-3-3.75v5M5 7.5h3" />
@@ -140,8 +156,8 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
               <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="#1e66f5" d="M1.5 1.5h13L13 13l-5 2-5-2z" />
-                <path stroke="#4c4f69" d="M5 4.5h6l-.5 6-2.5 1-2.5-1-.08-1m1.08-2h4" />
+                <path stroke="var(--c-blue)" d="M1.5 1.5h13L13 13l-5 2-5-2z" />
+                <path stroke="var(--c-gray)" d="M5 4.5h6l-.5 6-2.5 1-2.5-1-.08-1m1.08-2h4" />
               </g>
             </svg>
           </div>
@@ -150,8 +166,8 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
               <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="#fe640b" d="M1.5 1.5h13L13 13l-5 2-5-2z" />
-                <path stroke="#4c4f69" d="M11 4.5H5l.25 3h5.5l-.25 3-2.5 1-2.5-1-.08-1" />
+                <path stroke="var(--c-orange)" d="M1.5 1.5h13L13 13l-5 2-5-2z" />
+                <path stroke="var(--c-gray)" d="M11 4.5H5l.25 3h5.5l-.25 3-2.5 1-2.5-1-.08-1" />
               </g>
             </svg>
           </div>
@@ -159,7 +175,7 @@
           <!-- React -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <g fill="none" stroke="#04a5e5" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="var(--c-sky)" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M8 10.8c4.14 0 7.5-1.25 7.5-2.8S12.14 5.2 8 5.2.5 6.45.5 8s3.36 2.8 7.5 2.8" />
                 <path
                   d="M5.52 9.4c2.07 3.5 4.86 5.72 6.23 4.95 1.37-.78.8-4.24-1.27-7.75C8.41 3.1 5.62.88 4.25 1.65c-1.37.78-.8 4.24 1.27 7.75" />
@@ -173,7 +189,7 @@
           <!-- Nextjs -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <g fill="none" stroke="#4c4f69" stroke-linecap="round" stroke-linejoin="round">
+              <g fill="none" stroke="var(--c-gray)" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12.33 12.85a6.5 6.5 0 111.55-2.08" />
                 <path d="M12.33 12.85 5.5 4.5v7m5-7v3" />
               </g>
@@ -184,8 +200,8 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
               <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="#8839ef" d="m11 5.5 3.5-1-6.5 11-6.5-11 3.5 1" />
-                <path stroke="#df8e1d" d="m6 1.5-.5 5 2-1-1 3L8 8v3l4-7.5-2 .5L11.5.5Z" />
+                <path stroke="var(--c-violet)" d="m11 5.5 3.5-1-6.5 11-6.5-11 3.5 1" />
+                <path stroke="var(--c-yellow)" d="m6 1.5-.5 5 2-1-1 3L8 8v3l4-7.5-2 .5L11.5.5Z" />
               </g>
             </svg>
           </div>
@@ -193,7 +209,7 @@
           <!-- Tailwind -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <path fill="none" stroke="#209fb5" stroke-linecap="round" stroke-linejoin="round"
+              <path fill="none" stroke="var(--c-teal)" stroke-linecap="round" stroke-linejoin="round"
                 d="M8 2.5q-3 0-3.75 3.33C5 4.73 5.88 4.31 6.87 4.58c.58.16.98.62 1.43 1.13.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.63 1.25-.57-.16-.97-.62-1.42-1.13C10.7 3.46 9.85 2.5 8 2.5m-3.75 6q-3 0-3.75 3.33c.75-1.1 1.63-1.52 2.63-1.25.57.16.97.62 1.42 1.13.74.83 1.6 1.79 3.45 1.79q3 0 3.75-3.33c-.75 1.1-1.63 1.52-2.62 1.25-.58-.16-.98-.62-1.43-1.13-.74-.83-1.6-1.79-3.45-1.79" />
             </svg>
           </div>
@@ -202,10 +218,10 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
               <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="#df8e1d" d="M4.73 4.02a4.64 4.64 0 115.55 6.56" />
-                <path stroke="#04a5e5" d="M7.5 10a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5" />
-                <path stroke="#04a5e5" d="M11.26 12a4.64 4.64 0 11-5.63-6.55" />
-                <path stroke="#df8e1d" d="M9.5 6a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5" />
+                <path stroke="var(--c-yellow)" d="M4.73 4.02a4.64 4.64 0 115.55 6.56" />
+                <path stroke="var(--c-sky)" d="M7.5 10a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5" />
+                <path stroke="var(--c-sky)" d="M11.26 12a4.64 4.64 0 11-5.63-6.55" />
+                <path stroke="var(--c-yellow)" d="M9.5 6a.5.5 0 01-.5.5.5.5 0 01-.5-.5.5.5 0 01.5-.5.5.5 0 01.5.5" />
               </g>
             </svg>
           </div>
@@ -214,13 +230,13 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.233 4.233">
               <g fill="none" stroke-linecap="round" stroke-width=".323" transform="translate(.417 .377)scale(.81844)">
-                <path stroke="#04a5e5" stroke-linejoin="round"
+                <path stroke="var(--c-sky)" stroke-linejoin="round"
                   d="M2.1120556.00292326.00584652 2.1252103.65919521 2.7712508 3.4189127.00620117ZM.98075386 3.0971945 1.6267944 2.4496922 2.2837709 3.0949863 1.6326479 3.7476594Z" />
-                <path stroke="#04a5e5" stroke-linejoin="round"
+                <path stroke="var(--c-sky)" stroke-linejoin="round"
                   d="M 1.6303914,2.4469637 2.282548,3.0980866 3.4173625,1.9581047 2.1182169,1.9565544 Z" />
-                <path stroke="#1e66f5" stroke-linejoin="round"
+                <path stroke="var(--c-blue)" stroke-linejoin="round"
                   d="m 2.282548,3.0980866 c 0,0 -0.649056,0.6537069 -0.6500895,0.6475058 -0.00103,-0.0062 0.4857584,0.4873088 0.4857584,0.4873088 H 3.418396 Z" />
-                <path stroke="#1e66f5"
+                <path stroke="var(--c-blue)"
                   d="M 3.4183961,4.2329012 2.282548,3.0980867 1.6324585,3.7455924 2.1182169,4.2329012" />
               </g>
             </svg>
@@ -230,12 +246,12 @@
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
               <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="#1e66f5"
+                <path stroke="var(--c-blue)"
                   d="M8.5 5.5h-3m6 0V3c0-.8-.7-1.5-1.5-1.5H7c-.8 0-1.5.7-1.5 1.5v2.5H3c-.8 0-1.5.7-1.5 1.5v2c0 .8.7 1.5 1.48 1.5" />
-                <path stroke="#df8e1d"
+                <path stroke="var(--c-yellow)"
                   d="M10.5 10.5h-3m-3 0V13c0 .8.7 1.5 1.5 1.5h3c.8 0 1.5-.7 1.5-1.5v-2.5H13c.8 0 1.5-.7 1.5-1.5V7c0-.8-.7-1.5-1.48-1.5H11.5c0 1.5 0 2-1 2h-2" />
-                <path stroke="#1e66f5" d="M2.98 10.5H4.5c0-1.5 0-2 1-2h2M7.5 3.5v0" />
-                <path stroke="#df8e1d" d="m 8.5,12.5 v 0" />
+                <path stroke="var(--c-blue)" d="M2.98 10.5H4.5c0-1.5 0-2 1-2h2M7.5 3.5v0" />
+                <path stroke="var(--c-yellow)" d="m 8.5,12.5 v 0" />
               </g>
             </svg>
           </div>
@@ -243,7 +259,7 @@
           <!-- Docker -->
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <path fill="none" stroke="#1e66f5" stroke-linecap="round" stroke-linejoin="round"
+              <path fill="none" stroke="var(--c-blue)" stroke-linecap="round" stroke-linejoin="round"
                 d="M.5 8.5H11l.75-.5a5.35 5.35 0 010-3.5c1 .6 1 1.88 1.74 2 .77-.09 1.23.01 2 .52 0 0-.97 1.77-2.5 1.98-1.93 3.65-4.5 5.5-6.98 5.5C0 14.5.5 8.5.5 8.5m1 0v-2m0 0h8m-6 2v-4m0 0h4m-2-2h2m-2 6v-6m2 6v-6m2 6v-2" />
             </svg>
           </div>
