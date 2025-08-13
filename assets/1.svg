@@ -12,15 +12,19 @@
   </style>
   <style>
     :root {
-      --bg: #f1f1f1;
-      --s1: #fff;
       --txt: #1e1e1e;
 
-      --bev: 1rem;
-      --bev-larger: calc(var(--bev) - 0.02rem);
-      --bev-offset: 0.1rem;
-      /* tan(22.5deg) = 0.4142 */
-      --bev-offset-diag: 0.4142 * var(--bev-offset);
+      --shadow-dark: #e3e3e3;
+      --shadow-light: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --txt: #fff;
+
+        --shadow-dark: #0b0e13;
+        --shadow-light: #0f141b;
+      }
     }
 
     * {
@@ -34,7 +38,6 @@
       width: 100%;
       height: 100%;
       color: var(--txt);
-      background: var(--bg);
       border-radius: 0.75rem 0.75rem 0 0;
     }
 
@@ -83,8 +86,8 @@
       justify-content: center;
       border-radius: 19%;
       overflow: hidden;
-      box-shadow: inset 5px 5px 9px #e3e3e3,
-        inset -5px -5px 9px #ffffff;
+      box-shadow: inset 5px 5px 9px var(--shadow-dark),
+        inset -5px -5px 9px var(--shadow-light);
     }
 
     .icon svg {

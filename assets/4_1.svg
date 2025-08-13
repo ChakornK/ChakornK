@@ -7,11 +7,19 @@
   </style>
   <style>
     :root {
-      --bg: #f1f1f1;
-      --s1: #fff;
       --txt: #1e1e1e;
 
-      --bev-offset: 0.1rem;
+      --shadow-dark: #e3e3e3;
+      --shadow-light: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --txt: #fff;
+
+        --shadow-dark: #0b0e13;
+        --shadow-light: #0f141b;
+      }
     }
 
     * {
@@ -25,13 +33,12 @@
       width: 100%;
       height: 100%;
       color: var(--txt);
-      background: var(--bg);
     }
 
     .content {
       width: calc(100% - 2rem);
       height: 100%;
-      padding: 1rem;
+      padding: 0.25rem 1rem;
     }
 
     .card {
@@ -41,8 +48,8 @@
       padding: 1rem;
       border-radius: 0.75rem;
       overflow: hidden;
-      box-shadow: inset 5px 5px 9px #e3e3e3,
-        inset -5px -5px 9px #ffffff;
+      box-shadow: inset 5px 5px 9px var(--shadow-dark),
+        inset -5px -5px 9px var(--shadow-light);
     }
 
     .card-heading {

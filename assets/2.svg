@@ -12,11 +12,19 @@
   </style>
   <style>
     :root {
-      --bg: #f1f1f1;
-      --s1: #fff;
       --txt: #1e1e1e;
 
-      --bev-offset: 0.1rem;
+      --shadow-dark: #e3e3e3;
+      --shadow-light: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --txt: #fff;
+
+        --shadow-dark: #0b0e13;
+        --shadow-light: #0f141b;
+      }
     }
 
     * {
@@ -30,7 +38,6 @@
       width: 100%;
       height: 100%;
       color: var(--txt);
-      background: var(--bg);
     }
 
     .content {
@@ -64,8 +71,8 @@
       justify-content: center;
       border-radius: 19%;
       overflow: hidden;
-      box-shadow: inset 5px 5px 9px #e3e3e3,
-        inset -5px -5px 9px #ffffff;
+      box-shadow: inset 5px 5px 9px var(--shadow-dark),
+        inset -5px -5px 9px var(--shadow-light);
     }
 
     .icon svg {
